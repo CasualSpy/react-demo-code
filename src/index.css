@@ -6,6 +6,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color:white;
+}
+
+h1 {
+  font-size:45px;
+}
+
+button {
+  margin-left: 2px;
+  margin-right:2px;
 }
 
 code {
