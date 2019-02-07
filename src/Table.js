@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import './Table.css'
 
 class Table extends Component {
-    removeCharacter() {
-
-    }
 
     render(){
         const {characterData, removeCharacter} = this.props;

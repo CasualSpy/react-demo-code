@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import logo from './logo.svg'
+import Button from 'react-bootstrap/Button'
 
 
 //Component principale, 
@@ -22,15 +24,28 @@ class App extends Component {
 
   render() {
     const components = [
-      {code:(<div><h1>test</h1><h2>test</h2></div>)},
-      {code:<h1>test2</h1>},
-      {code:<h1>test3</h1>}
+      {code:(
+        <div className="row">
+           <h1>React</h1>
+           <img src={logo} alt="react"/>
+        </div>
+        )},
+      {code:(
+        <div>
+          <h1>test2</h1>
+        </div>
+        )},
+      {code:(
+      <div>
+        <h1>test3</h1>
+      </div>
+      )}
     ]
     return (
       <div className="App">
         {components[this.state.index].code}
-          <button type="button" onClick={() => this.previous(components.length)}>Previous</button>
-          <button type="button" onClick={() => this.next(components.length)}>Next</button>
+          <Button variant="success" onClick={() => this.previous(components.length)}>Previous</Button>
+          <Button variant="success" onClick={() => this.next(components.length)}>Next</Button>
       </div>
     );
   }
