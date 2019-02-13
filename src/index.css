@@ -18,13 +18,14 @@ h2 {
   font-size:35px;
 }
 
-img {
+#logo {
   width:100px;
   height:100px;
 }
 
-
-
+Button {
+  margin:2px;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
